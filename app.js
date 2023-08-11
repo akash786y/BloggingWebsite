@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const ejs = require('ejs')
 const _ = require('lodash')
 
-const homeStartingContent = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam mollitia ea vel error consequuntur eos minus eum, quae nemo quidem cumque quasi sapiente nesciunt deleniti odio commodi enim quos soluta accusantium dicta? Sapiente eum expedita, officiis perferendis aliquam praesentium fugit vitae laudantium, id error blanditiis mollitia vel eligendi! Natus, beatae?'
+const homeStartingContent = "Our world is a captivating tapestry of wonders, where nature's artistry and human ingenuity intertwine to create an awe-inspiring symphony of beauty. From the grandeur of towering mountains to the delicate intricacy of a flower's petal, every corner of our planet holds its own unique charm, inviting us to embark on a journey of discovery and appreciation."
 const aboutContent = 'Hello my name is Akash Yadav, I am from Pune Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatibus? Architecto minima, consequuntur ipsum veniam magnam quis. Et, magnam nisi.'
 const contactContent = '+9086XXXXXX   +8723XXXXXX    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita modi placeat laborum explicabo dolores minima inventore voluptate sit voluptatum fuga.'
 
@@ -33,7 +33,7 @@ app.get('/about', (req, res) => {
     })
 })
 
-app.get('/contacts', (req, res) => {
+app.get('/contacts',  (req, res) => {
     res.render('contacts', {
         contactContent: contactContent
     })
